@@ -546,6 +546,7 @@ export default {
       this.$store.state.memberModalOptions.fetchMoreMembers = data.fetchMoreMembers;
       this.$root.$emit('bv::show::modal', 'members-modal');
       this.getMembers();
+      this.searchMembers();
     });
   },
   beforeDestroy () {
